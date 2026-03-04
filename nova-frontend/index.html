@@ -1,0 +1,55 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOVA Voice Assistant</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div class="nova-container">
+        <!-- NOVA Logo Only (No Phone Status) -->
+        <div class="nova-logo">
+            <div class="star-container">
+                <i class="fas fa-star star-main"></i>
+                <i class="fas fa-star star-1"></i>
+                <i class="fas fa-star star-2"></i>
+                <i class="fas fa-star star-3"></i>
+            </div>
+            <h1>NOVA</h1>
+            <p class="tagline">VOICE ASSISTANT</p>
+        </div>
+
+        <!-- Message Display (Only ONE message area) -->
+        <div class="message-area">
+            <div class="assistant-message" id="assistantMessage">
+                <i class="fas fa-star"></i>
+                <p>Interesting! What else would you like to know?</p>
+            </div>
+            
+            <div class="user-message" id="userMessage">
+                <p></p>
+            </div>
+        </div>
+
+        <!-- SINGLE MIC BUTTON (Only ONE) -->
+        <div class="mic-section">
+            <button class="mic-button" id="micButton">
+                <i class="fas fa-microphone"></i>
+            </button>
+            <p class="mic-hint" id="micHint">tap to speak</p>
+        </div>
+
+        <!-- Suggestion Chips -->
+        <div class="suggestions">
+            <span class="suggestion-chip" data-text="Hello">👤 Hello</span>
+            <span class="suggestion-chip" data-text="What time is it?">🕒 Time</span>
+            <span class="suggestion-chip" data-text="Tell me a joke">🔄 Joke</span>
+            <span class="suggestion-chip" data-text="How are you?">🎵 How are you?</span>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
